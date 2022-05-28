@@ -27,7 +27,7 @@ namespace UOR
         private DataTable tt;
         private DataTable cc;
         private DataTable dd;
-        NpgsqlConnection con = new NpgsqlConnection("Server=localhost;Port=5432; User Id = postgres; Password=123; Database=UOR;");
+        NpgsqlConnection con = new NpgsqlConnection("Server=localhost;Port=5432; User Id = postgres; Password=dbrfnbif23; Database=UOR1;");
 
         public UOR()
         {
@@ -72,7 +72,7 @@ namespace UOR
         private void UOR_Load(object sender, EventArgs e)
         {
       
-            con = new NpgsqlConnection("Server=localhost;Port=5432; User Id = postgres; Password=123; Database=UOR;");
+            con = new NpgsqlConnection("Server=localhost;Port=5432; User Id = postgres; Password=dbrfnbif23; Database=UOR1;");
             Select();
             Load_Kindsport();
         }
@@ -160,6 +160,21 @@ namespace UOR
             Form1 OtherMain = new Form1();
             OtherMain.set_id(Convert.ToInt32(dataGridView1.SelectedRows[0].Cells[0].Value));
             OtherMain.Show();
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

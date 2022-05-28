@@ -13,7 +13,7 @@ namespace UOR
 {
     public partial class UOR1 : Form
     {
-        NpgsqlConnection con = new NpgsqlConnection("Server=localhost;Port=5432; User Id = postgres; Password=123; Database=UOR;");
+        NpgsqlConnection con = new NpgsqlConnection("Server=localhost;Port=5432; User Id = postgres; Password=dbrfnbif23; Database=UOR1;");
         public UOR1()
         {
             InitializeComponent();
@@ -122,6 +122,16 @@ namespace UOR
                 }
             }      
             con.Close();
+        }
+
+        private void textBox4_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
