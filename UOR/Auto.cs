@@ -14,7 +14,7 @@ namespace UOR
 {
     public partial class Auto : Form
     {
-        NpgsqlConnection con = new NpgsqlConnection("Server=localhost;Port=5432; User Id = postgres; Password=dbrfnbif23; Database=UOR;");
+        NpgsqlConnection con = new NpgsqlConnection("Server=localhost;Port=5432; User Id = postgres; Password=123; Database=UOR;");
 
         public Auto()
         {
@@ -49,6 +49,7 @@ namespace UOR
                 else
                 {
                     MessageBox.Show("Неверные данные");
+                    con.Close();
                 }
                 }
                 catch (Exception ex)
