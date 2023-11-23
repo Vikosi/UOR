@@ -27,7 +27,7 @@ namespace UOR
         private DataTable tt;
         private DataTable cc;
         private DataTable dd;
-        NpgsqlConnection con = new NpgsqlConnection("Server=localhost;Port=5432; User Id = postgres; Password=dbrfnbif23; Database=UOR1;");
+        NpgsqlConnection con = new NpgsqlConnection("Server=localhost;Port=5432; User Id = ; Password=; Database=UOR1;");
 
         public UOR()
         {
@@ -72,7 +72,7 @@ namespace UOR
         private void UOR_Load(object sender, EventArgs e)
         {
       
-            con = new NpgsqlConnection("Server=localhost;Port=5432; User Id = postgres; Password=dbrfnbif23; Database=UOR1;");
+            con = new NpgsqlConnection("Server=localhost;Port=5432; User Id = ; Password=; Database=UOR1;");
             Select();
             Load_Kindsport();
         }
