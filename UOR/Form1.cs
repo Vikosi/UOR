@@ -15,7 +15,7 @@ namespace UOR
     {
         private int ids;
         int idp;
-        NpgsqlConnection con = new NpgsqlConnection("Server=localhost;Port=5432; User Id = postgres; Password=dbrfnbif23; Database=UOR1;");
+        NpgsqlConnection con = new NpgsqlConnection("Server=localhost;Port=5432; User Id = p; Password=; Database=UOR1;");
 
         public void set_id(int id)
         {
