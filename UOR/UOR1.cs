@@ -13,7 +13,7 @@ namespace UOR
 {
     public partial class UOR1 : Form
     {
-        NpgsqlConnection con = new NpgsqlConnection("Server=localhost;Port=5432; User Id = postgres; Password=dbrfnbif23; Database=UOR1;");
+        NpgsqlConnection con = new NpgsqlConnection("Server=localhost;Port=5432; User Id = ; Password=; Database=UOR1;");
         public UOR1()
         {
             InitializeComponent();
